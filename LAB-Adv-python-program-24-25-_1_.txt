@@ -1,6 +1,5 @@
 17 marks programs
 Write down program to reshape the 3 x 4 array into 3 dimensions of size 2,2,3 and 2,3,2 using numpy. 
-#New example - reshape
 import numpy as np
 arr =np.array([[1, 2, 3, 4],
 [5, 2, 4, 2],
@@ -29,9 +28,7 @@ print(country)?
 2. Write a program in python to create a profile and? print a particular fake data.? 
 ? 
 import?faker? 
-#signature? 
-#simple_profile(sex:?Optional[GenderType]?=?None)???Dict[str,?Union[str,?datetime.date,?GenderType]]? 
-faker_obj?=?faker.Faker()? 
+ faker_obj?=?faker.Faker()? 
 ? 
 gender?=?'M'? 
 male_profile?=?faker_obj.simple_profile(sex=gender)? 
@@ -59,7 +56,6 @@ for?_?in?range(100):?
 ??loc.append(fake.location_on_land())? 
 dt?=?{"name":n,"address":a,"location":loc}? 
 json?=?json.dumps(dt)? 
-#print("All?json?Data")? 
 print(json)? 
 
 #Numpy Prgrams
@@ -120,14 +116,11 @@ sorted_index_array = np.argsort(arr)
 sorted_array = arr[sorted_index_array] 
 print("Sorted array:", sorted_array) 
 ?? 
-# we want 3rd largest value 
 n = 3
 ?? 
 rslt = sorted_array[-n : ] 
 ?? 
 print("{} largest value:".format(n),?rslt[0]) 
- 
-#Output
 Given array: [2 0 1 5 4 1 9] 
 Sorted array: [0 1 1 2 4 5 9] 
 1 largest value: 9 
